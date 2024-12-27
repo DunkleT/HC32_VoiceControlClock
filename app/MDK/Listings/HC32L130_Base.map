@@ -1,0 +1,85 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000048c, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000488, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO          324    RESET               startup_hc32l13x.o
+    0x000000c0   0x000000c0   0x00000000   Code   RO          849  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x000000c0   0x00000004   Code   RO          858    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x000000c4   0x00000004   Code   RO          861    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO          863    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO          865    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x000000c8   0x00000008   Code   RO          866    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x000000d0   0x00000004   Code   RO          873    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
+    0x000000d4   0x000000d4   0x00000000   Code   RO          868    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
+    0x000000d4   0x000000d4   0x00000000   Code   RO          870    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
+    0x000000d4   0x000000d4   0x00000004   Code   RO          859    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d8   0x000000d8   0x0000003c   Code   RO          325    .text               startup_hc32l13x.o
+    0x00000114   0x00000114   0x00000024   Code   RO          854    .text               mc_p.l(memcpya.o)
+    0x00000138   0x00000138   0x00000024   Code   RO          874    .text               mc_p.l(init.o)
+    0x0000015c   0x0000015c   0x0000000e   Code   RO          283    i.$Sub$$main        system_hc32l13x.o
+    0x0000016a   0x0000016a   0x00000008   Code   RO            3    i.ADC_IRQHandler    interrupts_hc32l13x.o
+    0x00000172   0x00000172   0x00000008   Code   RO            4    i.CLKTRIM_IRQHandler  interrupts_hc32l13x.o
+    0x0000017a   0x0000017a   0x00000008   Code   RO            5    i.DMAC_IRQHandler   interrupts_hc32l13x.o
+    0x00000182   0x00000182   0x0000000c   Code   RO            7    i.FLASH_RAM_IRQHandler  interrupts_hc32l13x.o
+    0x0000018e   0x0000018e   0x0000000c   Code   RO            8    i.HardFault_Handler  interrupts_hc32l13x.o
+    0x0000019a   0x0000019a   0x00000008   Code   RO            9    i.I2C0_IRQHandler   interrupts_hc32l13x.o
+    0x000001a2   0x000001a2   0x00000008   Code   RO           10    i.I2C1_IRQHandler   interrupts_hc32l13x.o
+    0x000001aa   0x000001aa   0x00000008   Code   RO           11    i.LCD_IRQHandler    interrupts_hc32l13x.o
+    0x000001b2   0x000001b2   0x00000008   Code   RO           12    i.LPTIM_IRQHandler  interrupts_hc32l13x.o
+    0x000001ba   0x000001ba   0x00000008   Code   RO           13    i.LPUART0_IRQHandler  interrupts_hc32l13x.o
+    0x000001c2   0x000001c2   0x00000008   Code   RO           14    i.LPUART1_IRQHandler  interrupts_hc32l13x.o
+    0x000001ca   0x000001ca   0x00000008   Code   RO           15    i.LVD_IRQHandler    interrupts_hc32l13x.o
+    0x000001d2   0x000001d2   0x00000008   Code   RO           16    i.PCA_IRQHandler    interrupts_hc32l13x.o
+    0x000001da   0x000001da   0x00000008   Code   RO           17    i.PCNT_IRQHandler   interrupts_hc32l13x.o
+    0x000001e2   0x000001e2   0x00000008   Code   RO           18    i.PORTA_IRQHandler  interrupts_hc32l13x.o
+    0x000001ea   0x000001ea   0x00000008   Code   RO           19    i.PORTB_IRQHandler  interrupts_hc32l13x.o
+    0x000001f2   0x000001f2   0x00000008   Code   RO           20    i.PORTC_IRQHandler  interrupts_hc32l13x.o
+    0x000001fa   0x000001fa   0x00000008   Code   RO           21    i.PORTD_IRQHandler  interrupts_hc32l13x.o
+    0x00000202   0x00000202   0x00000008   Code   RO           22    i.RTC_IRQHandler    interrupts_hc32l13x.o
+    0x0000020a   0x0000020a   0x00000008   Code   RO           23    i.SPI0_IRQHandler   interrupts_hc32l13x.o
+    0x00000212   0x00000212   0x00000008   Code   RO           24    i.SPI1_IRQHandler   interrupts_hc32l13x.o
+    0x0000021a   0x0000021a   0x00000008   Code   RO           25    i.SysTick_Handler   interrupts_hc32l13x.o
+    0x00000222   0x00000222   0x00000002   PAD
+    0x00000224   0x00000224   0x0000013c   Code   RO          709    i.Sysctrl_GetHClkFreq  sysctrl.o
+    0x00000360   0x00000360   0x00000010   Code   RO          284    i.SystemCoreClockUpdate  system_hc32l13x.o
+    0x00000370   0x00000370   0x00000044   Code   RO          285    i.SystemInit        system_hc32l13x.o
+    0x000003b4   0x000003b4   0x00000008   Code   RO           26    i.TIM0_IRQHandler   interrupts_hc32l13x.o
+    0x000003bc   0x000003bc   0x00000008   Code   RO           27    i.TIM1_IRQHandler   interrupts_hc32l13x.o
+    0x000003c4   0x000003c4   0x00000008   Code   RO           28    i.TIM2_IRQHandler   interrupts_hc32l13x.o
+    0x000003cc   0x000003cc   0x00000008   Code   RO           29    i.TIM3_IRQHandler   interrupts_hc32l13x.o
+    0x000003d4   0x000003d4   0x00000008   Code   RO           30    i.TIM4_IRQHandler   interrupts_hc32l13x.o
+    0x000003dc   0x000003dc   0x00000008   Code   RO           31    i.TIM5_IRQHandler   interrupts_hc32l13x.o
+    0x000003e4   0x000003e4   0x00000008   Code   RO           32    i.TIM6_IRQHandler   interrupts_hc32l13x.o
+    0x000003ec   0x000003ec   0x00000008   Code   RO           33    i.UART0_IRQHandler  interrupts_hc32l13x.o
+    0x000003f4   0x000003f4   0x00000008   Code   RO           34    i.UART1_IRQHandler  interrupts_hc32l13x.o
+    0x000003fc   0x000003fc   0x00000008   Code   RO           35    i.VC0_IRQHandler    interrupts_hc32l13x.o
+    0x00000404   0x00000404   0x00000008   Code   RO           36    i.VC1_IRQHandler    interrupts_hc32l13x.o
+    0x0000040c   0x0000040c   0x00000008   Code   RO           37    i.WDT_IRQHandler    interrupts_hc32l13x.o
+    0x00000414   0x00000414   0x0000001a   Code   RO          843    i.__ARM_common_switch8  sysctrl.o
+    0x0000042e   0x0000042e   0x0000000e   Code   RO          878    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x0000043c   0x0000043c   0x00000002   Code   RO          879    i.__scatterload_null  mc_p.l(handlers.o)
+    0x0000043e   0x0000043e   0x0000000e   Code   RO          880    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x0000044c   0x0000044c   0x00000002   Code   RO          331    i.main              main.o
+    0x0000044e   0x0000044e   0x00000002   PAD
+    0x00000450   0x00000450   0x00000018   Data   RO          729    .constdata          sysctrl.o
+    0x00000468   0x00000468   0x00000020   Data   RO          876    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00000488, Size: 0x00000208, Max: 0x00002000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000488   0x00000004   Data   RW          286    .data               system_hc32l13x.o
+    0x20000004   0x0000048c   0x00000004   PAD
+    0x20000008        -       0x00000200   Zero   RW          322    STACK               startup_hc32l13x.o
+

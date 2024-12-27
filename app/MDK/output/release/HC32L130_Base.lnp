@@ -1,0 +1,12 @@
+--cpu Cortex-M0+
+".\output\release\interrupts_hc32l13x.o"
+".\output\release\system_hc32l13x.o"
+".\output\release\startup_hc32l13x.o"
+".\output\release\main.o"
+".\output\release\spi.o"
+".\output\release\ddl.o"
+".\output\release\gpio.o"
+".\output\release\sysctrl.o"
+--library_type=microlib --strict --scatter ".\output\release\HC32L130_Base.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--list ".\Listings\HC32L130_Base.map" -o .\output\release\HC32L130_Base.axf

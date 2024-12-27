@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\driver\inc -I ..\..\mcu\common -I ..\source -I ..\source\bsp -I ..\source\app
+-I.\RTE\_Target_1
+-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+-IC:\Users\Administrator\AppData\Local\Arm\Packs\HDSC\HC32L13x\1.1.0\Device\Include
+-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_
+-o .\output\release\bgr.o --omf_browse .\output\release\bgr.crf --depend .\output\release\bgr.d "..\..\driver\src\bgr.c"

@@ -1273,7 +1273,7 @@ void Page_Timing_Function(void)
 								if(calendar.hour<beginDs3231Hour)
 								{
 										//¹ýÁËÎçÒ¹
-										timingHourCount = (beginDs3231Hour + 24) - calendar.hour;
+										timingHourCount = (calendar.hour + 24) - beginDs3231Hour;
 								}
 								else
 								{
